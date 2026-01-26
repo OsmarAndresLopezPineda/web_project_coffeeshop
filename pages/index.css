@@ -1,10 +1,12 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 
   /* Fuentes Inter y Noto Serif y fuentes alternativas */
   font-family: "Inter", Arial, sans-serif;
-  font-family: "Noto Serif", "Times New Roman", serif;
+  /*font-family: "Noto Serif", "Times New Roman", serif;*/
 
   /* Caracteristicas de fuente */
   font-size: 16px;
