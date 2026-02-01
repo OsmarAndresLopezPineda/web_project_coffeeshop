@@ -70,7 +70,7 @@
   letter-spacing: -1px; /* Espacio entre letras */
 }
 
-.header__title_span-accent {
+.header__span-accent {
   display: block; /* Hacemos que sea un bloque para perzonalizar el texto*/
 
   /* Estilo de texto */
@@ -104,18 +104,28 @@
 .header__footer {
   display: flex; /* Activamos dysplay flex para que funcione Justify content */
   justify-content: space-between; /* Establecemos el espacio entre elementos */
-  align-items: flex-end; /* Se alinean a la parte de abajo */
   margin-top: auto; /* Margen superior automatico */
 }
 
-.header__footer_description {
-  margin-bottom: 0; /* Quitamos el margen inferior del tirulo */
+.header__paragraph {
+  margin-top: 0; /* Quitamos el margen superior del titulo */
+  margin-bottom: 0; /* Quitamos el margen inferior del titulo */
 
   /* Tipografia */
   font-weight: 500; /* Grosor de fuente */
   font-size: 16px; /* Tamaño de fiente */
   line-height: 20px; /*Altura de fuente */
   color: #838383; /* Color tipografia */
+}
+
+.header__footer-left {
+  display: flex; /* Activamos dysplay flex para que funcione flex direction */
+  flex-direction: column; /* Columna */
+}
+
+.header__footer-right {
+  display: flex; /* Activamos dysplay flex para que funcione aling items */
+  align-items: flex-end; /* Se alinean a la parte de abajo */
 }
 
 .header__footer_list {
@@ -130,11 +140,6 @@
   font-size: 16px; /* Tamaño de fiente */
   line-height: 20px; /*Altura de fuente */
   color: #838383; /* Color tipografia */
-}
-
-.header__footer-left {
-}
-.header__footer-right {
 }
 
 .main {
