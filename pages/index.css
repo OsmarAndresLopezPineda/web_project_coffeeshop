@@ -1,4 +1,5 @@
 .page {
+  /* Tamaño de pantalla */
   min-width: 1100px;
   max-width: 1600px;
   margin-right: auto;
@@ -11,4 +12,188 @@
   /* Caracteristicas de fuente */
   font-size: 16px;
   line-height: 20px;
+
+  /* Brief Sprint 4 Stage 2 */
+  background-color: #ffffff; /* Color de fondo */
+  background-image: url("../images/background_header.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Que no se repita el fondo */
+  background-position: center; /* Centramos la imagen de fondo */
+  background-size: cover; /*Que cubra todo el fondo */
+}
+.header {
+  /* Brief Sprint 4 Stage 2 */
+  display: flex; /* Activamos flexbox */
+  flex-direction: column; /* Cambiamos la direccion por defecto */
+  height: 100vh; /* Declaramos tamaño de la pantalla para  que se adapte entre 720px y 800px*/
+  min-height: 720px; /* Altura minima*/
+  max-height: 800px; /* Altura maxima */
+  padding: 30px 80px 40px; /* Padding */
+  box-sizing: border-box; /* Hace que el padding no exceda el tamaño */
+}
+.nav {
+  display: flex; /* Activamos flexbox */
+  justify-content: space-between; /* Distancia entre elementos */
+}
+
+.nav__logo {
+  position: relative; /* Sirve para asignar la posicion del elemento manteniendo su flujo de trabajo  en base a su objeto padre*/
+  width: 105px; /* Ancho */
+  height: 39px; /* Alto */
+  left: -50px; /* Margen Izquierdo */
+}
+
+.nav__links {
+  display: flex; /* Activamos flexbox */
+  column-gap: 20px; /* Separacion entre elementos gap */
+  list-style-type: none; /* Quitamos las viñetas de las listas */
+  padding: 0px; /* Eliminamos el relleno de la lista */
+  margin: 0px; /* Eliminamos el margen de la lista */
+}
+.nav__link {
+  color: #000000; /* Colo de la fuente */
+  text-decoration: none; /* Quitamos el subrayado del texto */
+  /* Estilos del texto */
+  font-weight: 500; /* Grosor de la fuente (Negritas)*/
+  font-size: 16px; /*Tamaño de la fuente */
+  line-height: 20px; /* Altura de la texto */
+}
+
+.header__title {
+  margin-top: 183px; /* Margen superior */
+  margin-bottom: 28px; /* Margen inferior */
+  max-width: 709px; /* Ancho maximo */
+
+  /* Estilo de texto */
+  font-weight: 500; /* Grosor de texto */
+  font-size: 58px; /*Tamaño de la fuente */
+  line-height: 72px; /* Altura de la texto */
+  letter-spacing: -1px; /* Espacio entre letras */
+}
+
+.header__title_span-accent {
+  display: block; /* Hacemos que sea un bloque para perzonalizar el texto*/
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-style: italic; /* Cursivas */
+  font-weight: normal; /* Grosor de texto */
+  color: #2f80ed; /* Color letras */
+}
+
+.header__description {
+  margin-top: 0px; /* Margen superior */
+  max-width: 683px; /* Ancho maximo */
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-weight: normal; /* Grosor de texto */
+  font-size: 20px; /*Tamaño de la fuente */
+  line-height: 30px; /* Altura de la texto */
+}
+
+.header__image {
+  width: 646px; /* 2.1 Ancho de la imagen */
+  height: 568px; /* 2.1 Alto de la imagen */
+  position: absolute; /* Posicion con base a el sitio web */
+  top: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  display: flex; /* Activamos dysplay flex para que funcione Justify content */
+  justify-content: space-between; /* Establecemos el espacio entre elementos */
+  align-items: flex-end; /* Se alinean a la parte de abajo */
+  margin-top: auto; /* Margen superior automatico */
+}
+
+.header__footer_description {
+  margin-bottom: 0; /* Quitamos el margen inferior del tirulo */
+
+  /* Tipografia */
+  font-weight: 500; /* Grosor de fuente */
+  font-size: 16px; /* Tamaño de fiente */
+  line-height: 20px; /*Altura de fuente */
+  color: #838383; /* Color tipografia */
+}
+
+.header__footer_list {
+  list-style-type: none; /* Quitamos las viñetas de las listas */
+  padding: 0; /* Eliminamos el relleno */
+  margin: 0; /*Eliminamos el margen */
+}
+
+.header__footer_list-item {
+  /* Estilo de texto */
+  font-weight: 500; /* Grosor de fuente */
+  font-size: 16px; /* Tamaño de fiente */
+  line-height: 20px; /*Altura de fuente */
+  color: #838383; /* Color tipografia */
+}
+
+.header__footer-left {
+}
+.header__footer-right {
+}
+
+.main {
+}
+.recipes {
+  /* Brief Sprint 4 Stage 2 */
+  background-color: #0a2750; /* Color de fondo */
+  background-image: url("../images/background_recipes.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Que no se repita el fondo */
+  background-position: center; /* Centramos la imagen de fondo */
+  background-size: cover; /*Que cubra todo el fondo */
+
+  /* Brief Sprint 4 Stage 2 */
+  display: flex; /* Activamos flexbox */
+  flex-direction: column; /* Cambiamos la direccion por defecto */
+  padding: 80px 100px 215px; /* Padding */
+}
+
+.recipes__title {
+  margin-top: 0px; /* Margen superior */
+  max-width: 540px; /* Ancho maximo */
+  margin-bottom: 24px; /* Margen inferior */
+
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #ffffff;
+}
+.recipes__subtitle {
+  margin-top: 0px; /* Margen superior */
+  max-width: 438px; /* Ancho maximo */
+  margin-bottom: 80px; /* Margen inferior */
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.recipes__videos {
+}
+.recipes__videos-item {
+  display: flex; /*Activamos flexbox */
+  align-items: center; /* Transversal */
+  justify-content: center; /* Alimeacion Principal */
+  flex-direction: row;
+  gap: 40px; /* Separacion entre elementos felxibles, horizontal y vertical */
+}
+.recipes__videos-iframe {
+}
+
+.recipes__videos-caption {
+  margin-bottom: 24px; /*Quitamos margen superior */
+  margin-bottom: 0; /*Quitamos margen inferior */
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
