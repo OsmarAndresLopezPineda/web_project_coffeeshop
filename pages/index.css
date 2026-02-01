@@ -182,19 +182,19 @@
   color: #ffffff;
 }
 .recipes__videos {
-}
-.recipes__videos-item {
   display: flex; /*Activamos flexbox */
   align-items: center; /* Transversal */
   justify-content: center; /* Alimeacion Principal */
   flex-direction: row;
   gap: 40px; /* Separacion entre elementos felxibles, horizontal y vertical */
 }
-.recipes__videos-iframe {
+.recipes__videos-item {
+}
+.recipes__iframe {
 }
 
 .recipes__videos-caption {
-  margin-bottom: 24px; /*Quitamos margen superior */
+  margin-top: 24px; /* Margen superior */
   margin-bottom: 0; /*Quitamos margen inferior */
   /* Estilo de texto */
   font-weight: 500;
