@@ -193,6 +193,7 @@
 .recipes__videos-item {
 }
 .recipes__iframe {
+  border: none; /*Retiramos el borde del video*/
 }
 
 .recipes__videos-caption {
@@ -234,10 +235,13 @@
   line-height: 52px;
 }
 
+.form {
+  width: 100%; /*Que tome el tamaño maximo permitido por la pantalla */
+}
+
 .reservation__form {
   margin: 0 auto; /*Centramos el formulario */
   max-width: 385px; /* Ancho maximo del formulario */
-  width: 100%; /*Que tome el tamaño maximo permitido por la pantalla */
 }
 
 .form__fieldset {
@@ -260,10 +264,10 @@
 .form__input {
   height: 60px; /* Altura del campo */
   box-sizing: border-box; /*El margen no sobrepasa los valores de altura y ancho, incluye padding y border dentro del height*/
+  margin-bottom: 32px; /*Margen inferior del label*/
 
   /* Estilo del campo de entrada*/
-  border-radius: 4px; /* Radio del redondeo del recuadro/
-  margin-bottom: 32px; /*Margen inferior del label*/
+  border-radius: 4px; /* Radio del redondeo del recuadro */
   border-color: #838383;
   /* Estilo de texto */
   font-size: 20px;
@@ -303,5 +307,5 @@
   margin-right: 12px; /*Margen derecho*/
   /* Estilo de Checkbox */
   accent-color: #2f80ed; /* Color de marcado */
-  border-radius: 2px; /* Radio del redondeo del recuadro  */
+  border-radius: 2px; /* Radio del redondeo del recuadro */
 }
