@@ -5,6 +5,8 @@
   margin-right: auto;
   margin-left: auto;
 
+  position: relative; /*Evita que el contenido se salga de la pagina */
+
   /* Fuentes Inter y Noto Serif y fuentes alternativas */
   font-family: "Inter", Arial, sans-serif;
   /*font-family: "Noto Serif", "Times New Roman", serif;*/
@@ -17,8 +19,8 @@
   background-color: #ffffff; /* Color de fondo */
   background-image: url("../images/background_header.svg"); /* Imagen de fondo */
   background-repeat: no-repeat; /* Que no se repita el fondo */
-  background-position: center; /* Centramos la imagen de fondo */
-  background-size: cover; /*Que cubra todo el fondo */
+  /*background-position: center; /* Centramos la imagen de fondo */
+  background-size: contain; /*Que cubra todo el contenedor */
 }
 .header {
   /* Brief Sprint 4 Stage 2 */
@@ -149,8 +151,8 @@
   background-color: #0a2750; /* Color de fondo */
   background-image: url("../images/background_recipes.svg"); /* Imagen de fondo */
   background-repeat: no-repeat; /* Que no se repita el fondo */
-  background-position: center; /* Centramos la imagen de fondo */
-  background-size: cover; /*Que cubra todo el fondo */
+  /*background-position: center; /* Centramos la imagen de fondo */
+  background-size: cover; /*Que cubra todo el contenedor */
 
   /* Brief Sprint 4 Stage 2 */
   display: flex; /* Activamos flexbox */
@@ -196,9 +198,110 @@
 .recipes__videos-caption {
   margin-top: 24px; /* Margen superior */
   margin-bottom: 0; /*Quitamos margen inferior */
+
+  display: flex; /* Activamos flexbox para poder justificar texto */
+  justify-content: space-between; /* Justificamos los elementos del texto con un span */
   /* Estilo de texto */
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.recipes__span-accent {
+}
+
+.reservation {
+  /* Brief Sprint 4 Stage 3 */
+  background-color: #d9e7ff; /* Color de fondo */
+  background-image: url("../images/background_reservation.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Que no se repita el fondo */
+  /*background-position: center; /* Centramos la imagen de fondo */
+  background-size: cover; /*Que cubra todo el contenedor */
+  /* Brief Sprint 4 Stage 3 */
+  display: flex; /* Activamos flexbox */
+  flex-direction: column; /* Cambiamos la direccion por defecto */
+  padding: 100px 0 120px; /* Padding */
+}
+
+.reservation__title {
+  margin: 0 auto 80px; /* Margen superior, laterial centrado, e inferior */
+  max-width: 438px; /* Ancho maximo */
+
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  margin: 0 auto; /*Centramos el formulario */
+  max-width: 385px; /* Ancho maximo del formulario */
+  width: 100%; /*Que tome el tamaño maximo permitido por la pantalla */
+}
+
+.form__fieldset {
+  display: flex; /* Activamos flexbos para hacer que el form sea vertical */
+  flex-direction: column; /* Colocamos los lelementos en una columna */
+  margin: 0; /*Quitamos el margin */
+  padding: 0; /*Quitamos el paddinng */
+  border: none; /*Quitamos el borde predeterminado por defecto*/
+}
+
+.form__label {
+  margin-bottom: 8px; /*Margen inferior del label*/
+
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  height: 60px; /* Altura del campo */
+  box-sizing: border-box; /*El margen no sobrepasa los valores de altura y ancho, incluye padding y border dentro del height*/
+
+  /* Estilo del campo de entrada*/
+  border-radius: 4px; /* Radio del redondeo del recuadro/
+  margin-bottom: 32px; /*Margen inferior del label*/
+  border-color: #838383;
+  /* Estilo de texto */
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 20px;
+}
+
+.form__button {
+  height: 60px; /* Altura del campo */
+  margin-bottom: 32px; /*Margen inferior del label*/
+  /* Estilo del boton */
+  background-color: #2f80ed;
+  border-radius: 4px; /* Radio del redondeo del recuadro */
+  border: none; /*Quitamos el borde */
+
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label_type-checkbox {
+  display: flex; /*Activamos felxbos para poder alinear el texto con el contendor */
+  align-items: center; /* Alinea items de forma vertical */
+  justify-content: center; /* Alinea items de forma horizontal */
+  margin: 0; /*Quitamos margenes */
+}
+
+.form__checkbox-input {
+  width: 20px; /* Ancho recuadro */
+  height: 20px; /* Alto recuadro */
+  margin-right: 12px; /*Margen derecho*/
+  /* Estilo de Checkbox */
+  accent-color: #2f80ed; /* Color de marcado */
+  border-radius: 2px; /* Radio del redondeo del recuadro  */
 }
