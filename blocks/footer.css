@@ -1,0 +1,96 @@
+.footer {
+  /* Caracteisticas y dimensiones */
+  background-color: #0a2850;
+  padding: 60px 80px;
+  /* Posicionamiento */
+  position: relative; /* Coloca el foter en una posicion relativa para que las demas posiciones se coloquen de forma adecuada*/
+  box-sizing: border-box; /* Hace que el padding no exceda el tamaño del bloque*/
+  overflow: hidden; /* Oculta el curculo que sobrepasa el footer */
+}
+
+.footer__circle {
+  /*Dimenciones y caracteristicas*/
+  width: 340px;
+  height: 340px;
+  background-color: #2f80ed;
+  /* Redondeo de las esquinas del bloque*/
+  border-radius: 50%;
+  /*Posicionamiento */
+  z-index: 1;
+  position: absolute;
+  top: -128px;
+  left: -44px;
+}
+
+.footer__content {
+  /*Posicionamiento*/
+  position: relative;
+  z-index: 2;
+  /*Distribución*/
+  display: flex; /*Activamos flexbox para poder usar justifi content*/
+  justify-content: space-between; /*Distribuimos el espacio entre los elementos*/
+}
+
+.footer__logo {
+  /*Tamaño de la imagen*/
+  width: 105px;
+  height: 39px;
+}
+
+.footer__social {
+}
+
+.footer__social-heading {
+  /*Margenes*/
+  margin: 0 0 20px;
+  /* Estilo de texto */
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer__list {
+  /* Eliminamos las biñetas de la lista */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /*Separacion entre elementos*/
+  display: flex; /*Activamos flexbos para separar los elementos*/
+  flex-direction: column; /* Hcemos que sean columnas*/
+  gap: 16px; /*Separamos los elementos de losta 16px*/
+}
+
+.footer__list-item {
+}
+
+.footer__social-link {
+  /* Posicionamiento */
+  display: inline-flex; /*Elemento flexible en la misma linea que otros elementos */
+  align-items: center; /*Alineacion Horizontal*/
+  gap: 10px; /*Separacion entre elementos (icono-texto) */
+  /*Quitamos la decoracion del texto*/
+  text-decoration: none;
+
+  /* Estilo de texto */
+  color: #ffffff;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__social-icon {
+  /*Dimensiones*/
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  /*Posicionamiento */
+  position: relative;
+  z-index: 2;
+  /*Separacion entre elementos*/
+  margin: 108px 0 0;
+
+  /* Estilo de texto */
+  color: #ffffff;
+}

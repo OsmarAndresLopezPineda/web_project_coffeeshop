@@ -1,0 +1,95 @@
+.header {
+  /* Brief Sprint 4 Stage 2 */
+  display: flex; /* Activamos flexbox */
+  flex-direction: column; /* Cambiamos la direccion por defecto */
+  height: 100vh; /* Declaramos tamaño de la pantalla para  que se adapte entre 720px y 800px*/
+  min-height: 720px; /* Altura minima*/
+  max-height: 800px; /* Altura maxima */
+  padding: 30px 80px 40px; /* Padding */
+  box-sizing: border-box; /* Hace que el padding no exceda el tamaño */
+  position: relative; /*Evita que el contenido se salga de la pagina */
+}
+
+.header__title {
+  margin-top: 183px; /* Margen superior */
+  margin-bottom: 28px; /* Margen inferior */
+  max-width: 709px; /* Ancho maximo */
+
+  /* Estilo de texto */
+  font-weight: 500; /* Grosor de texto */
+  font-size: 58px; /*Tamaño de la fuente */
+  line-height: 72px; /* Altura de la texto */
+  letter-spacing: -1px; /* Espacio entre letras */
+}
+
+.header__span-accent {
+  display: block; /* Hacemos que sea un bloque para perzonalizar el texto*/
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-style: italic; /* Cursivas */
+  font-weight: normal; /* Grosor de texto */
+  color: #2f80ed; /* Color letras */
+}
+
+.header__description {
+  margin-top: 0px; /* Margen superior */
+  max-width: 683px; /* Ancho maximo */
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-weight: normal; /* Grosor de texto */
+  font-size: 20px; /*Tamaño de la fuente */
+  line-height: 30px; /* Altura de la texto */
+}
+
+.header__image {
+  width: 646px; /* 2.1 Ancho de la imagen */
+  height: 568px; /* 2.1 Alto de la imagen */
+  position: absolute; /* Posicion con base a el sitio web */
+  top: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  display: flex; /* Activamos dysplay flex para que funcione Justify content */
+  justify-content: space-between; /* Establecemos el espacio entre elementos */
+  margin-top: auto; /* Margen superior automatico */
+}
+
+.header__paragraph {
+  margin-top: 0; /* Quitamos el margen superior del titulo */
+  margin-bottom: 0; /* Quitamos el margen inferior del titulo */
+
+  /* Tipografia */
+  font-weight: 500; /* Grosor de fuente */
+  font-size: 16px; /* Tamaño de fiente */
+  line-height: 20px; /*Altura de fuente */
+  color: #838383; /* Color tipografia */
+}
+
+.header__footer-left {
+  display: flex; /* Activamos dysplay flex para que funcione flex direction */
+  flex-direction: column; /* Columna */
+}
+
+.header__footer-right {
+  display: flex; /* Activamos dysplay flex para que funcione aling items */
+  align-items: flex-end; /* Se alinean a la parte de abajo */
+}
+
+.header__footer_list {
+  list-style-type: none; /* Quitamos las viñetas de las listas */
+  padding: 0; /* Eliminamos el relleno */
+  margin: 0; /*Eliminamos el margen */
+}
+
+.header__footer_list-item {
+  /* Estilo de texto */
+  font-weight: 500; /* Grosor de fuente */
+  font-size: 16px; /* Tamaño de fiente */
+  line-height: 20px; /*Altura de fuente */
+  color: #838383; /* Color tipografia */
+}

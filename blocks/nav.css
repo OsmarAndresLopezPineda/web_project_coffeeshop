@@ -1,0 +1,32 @@
+.nav {
+  display: flex; /* Activamos flexbox */
+  justify-content: space-between; /* Distancia entre elementos */
+}
+
+.nav__logo {
+  position: relative; /* Sirve para asignar la posicion del elemento manteniendo su flujo de trabajo  en base a su objeto padre*/
+  width: 105px; /* Ancho */
+  height: 39px; /* Alto */
+  left: -50px; /* Margen Izquierdo */
+}
+
+.nav__links {
+  display: flex; /* Activamos flexbox */
+  column-gap: 20px; /* Separacion entre elementos gap */
+  list-style-type: none; /* Quitamos las viñetas de las listas */
+  padding: 0px; /* Eliminamos el relleno de la lista */
+  margin: 0px; /* Eliminamos el margen de la lista */
+}
+
+.nav__link {
+  color: #000000; /* Colo de la fuente */
+  text-decoration: none; /* Quitamos el subrayado del texto */
+  /* Estilos del texto */
+  font-weight: 500; /* Grosor de la fuente (Negritas)*/
+  font-size: 16px; /*Tamaño de la fuente */
+  line-height: 20px; /* Altura de la texto */
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}

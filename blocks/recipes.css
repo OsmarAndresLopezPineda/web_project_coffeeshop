@@ -1,0 +1,64 @@
+.recipes {
+  /* Brief Sprint 4 Stage 2 */
+  background-color: #0a2750; /* Color de fondo */
+  background-image: url("../images/background_recipes.svg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Que no se repita el fondo */
+  /*background-position: center; /* Centramos la imagen de fondo */
+  background-size: cover; /*Que cubra todo el contenedor */
+
+  /* Brief Sprint 4 Stage 2 */
+  display: flex; /* Activamos flexbox */
+  flex-direction: column; /* Cambiamos la direccion por defecto */
+  padding: 80px 100px 215px; /* Padding */
+}
+.recipes__title {
+  margin-top: 0px; /* Margen superior */
+  max-width: 540px; /* Ancho maximo */
+  margin-bottom: 24px; /* Margen inferior */
+
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #ffffff;
+}
+.recipes__subtitle {
+  margin-top: 0px; /* Margen superior */
+  max-width: 438px; /* Ancho maximo */
+  margin-bottom: 80px; /* Margen inferior */
+
+  /* Estilo de texto */
+  font-family:
+    "Noto Serif", "Times New Roman", serif; /* Fuente Noto Serif y fuentes alternativas */
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.recipes__videos {
+  display: flex; /*Activamos flexbox */
+  align-items: center; /* Transversal */
+  justify-content: center; /* Alimeacion Principal */
+  flex-direction: row;
+  gap: 40px; /* Separacion entre elementos felxibles, horizontal y vertical */
+}
+.recipes__videos-item {
+}
+.recipes__iframe {
+  border: none; /*Retiramos el borde del video*/
+}
+
+.recipes__videos-caption {
+  margin-top: 24px; /* Margen superior */
+  margin-bottom: 0; /*Quitamos margen inferior */
+
+  display: flex; /* Activamos flexbox para poder justificar texto */
+  justify-content: space-between; /* Justificamos los elementos del texto con un span */
+  /* Estilo de texto */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.recipes__span-accent {
+}
