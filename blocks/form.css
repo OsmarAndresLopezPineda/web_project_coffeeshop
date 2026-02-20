@@ -2,11 +2,6 @@
   width: 100%; /*Que tome el tamaño maximo permitido por la pantalla */
 }
 
-.reservation__form {
-  margin: 0 auto; /*Centramos el formulario */
-  max-width: 385px; /* Ancho maximo del formulario */
-}
-
 .form__fieldset {
   display: flex; /* Activamos flexbos para hacer que el form sea vertical */
   flex-direction: column; /* Colocamos los lelementos en una columna */
